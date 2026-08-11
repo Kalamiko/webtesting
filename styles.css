@@ -294,7 +294,7 @@ body:has(.informacion__extra:hover){
 
 /* ---------------- media queries */
 
-@media screen and (max-width:600px){
+@media screen and (max-width:700px){
     .layout{
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -309,18 +309,25 @@ body:has(.informacion__extra:hover){
         display: none;
     }
     .main{
-        grid-template-columns: 300px;
+        grid-template-columns: 200px;
         justify-content: center;
     }
 
     .header{
-        padding: 0 1rem;
+        padding: 8px;
+        justify-content: space-around;
+        gap: 8px;
+        box-shadow: 0 2px 9px #222;
+        z-index: 90;
+        max-width: 100vw;
     }
     .buscador{
-        max-width: 900%;
+        max-width: 70%;
+        flex: 2;
     }
     .usuario{
-        padding-right: 10px;
+        font-size: 14px;
+        flex: 0;
     }
     .tarjeta__container{
         background-color: var(--card);
